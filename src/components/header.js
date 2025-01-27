@@ -1,200 +1,71 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import './header.css';
+import '../css/bootstrap.css';
+import '../css/font-awesome.min.css';
+import '../css/responsive.css';
+import '../css/style.css';
+import '../css/style.scss';
 
 const Header = () => {
   return (
     <div>
-      <header className="hide-when-mobile">
-        <h1>
-          <Link to="/">
-          Ecomerce App
-          </Link>
-          </h1>
-        <ul className="flex">
-        <li className="main-list">
-            <NavLink className="main-link" to="/">
-              Home
-            </NavLink>
-            {/*<ul className="sub-ul">
-              <li>
-                <a href="">Project1.1</a>
-              </li>
-              <li>
-                <a href="">Project1.2</a>
-              </li>
-              <li>
-                <a href="">Project1.3</a>
-              </li>
-            </ul>*/}
-          </li>
-          <li className="main-list">
-            <NavLink className="main-link" to="/Brand">
-              Brand
-            </NavLink>
-            {/*<ul className="sub-ul">
-              <li>
-                <a href="">Project1.1</a>
-              </li>
-              <li>
-                <a href="">Project1.2</a>
-              </li>
-              <li>
-                <a href="">Project1.3</a>
-              </li>
-            </ul>*/}
-          </li>
-          <li className="main-list">
-            <NavLink className="main-link" to="/Product">
-              Product
-            </NavLink>
-            {/*<ul className="sub-ul">
-              <li>
-                <a href="">Project2.1</a>
-              </li>
-              <li>
-                <a href="">Project2.2</a>
-              </li>
-              <li className="mini-Projects">
-                <a href="">mini Projects&nbsp; + </a>
-                <ul className="sub-sub-ul">
-                  <li>
-                    <a href="">Project 1</a>
-                  </li>
-                  <li>
-                    <a href="">Project 2</a>
-                  </li>
-                  <li>
-                    <a href="">Project 3</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>*/}
-          </li>
-          <li className="main-list">
-            <NavLink className="main-link" to="/ServiceClient">
-              Service Client
-            </NavLink>
-            {/*<ul className="sub-ul sub-of-js">
-              <li>
-                <a href="">coming soon🔥</a>
-              </li>
-            </ul>*/}
-          </li>
-        </ul>
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="search-input"
-          />
-          <button type="submit" className="search-button">
-            Search
-          </button>
-        </div>
-        <div className="profile-button">
-          <i className="fas fa-user"></i> {/* FontAwesome user icon */}
-          <ul className="sub-ul sub-of-js">
-              <li>
-                <a href="">Profile</a>
-              </li>
-              <li>
-                <a href="">Settings</a>
-              </li>
-              <li>
-                <a href="">Help</a>
-              </li>
-              <li>
-                <a href="">coming soon🔥</a>
-              </li>
-            </ul>
+      {/* header section starts */}
+      <header className="header_section">
+        <div className="container">
+          <nav className="navbar navbar-expand-lg custom_nav-container ">
+            <a className="navbar-brand" href="index.html">
+              <span>Feane</span>
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className=""> </span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav  mx-auto ">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/">
+                    Home <span className="sr-only">(current)</span>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/Chatbot">
+                    Chat
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/Meals">
+                    Meals
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/AboutUs">
+                    About Us
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/ServiceClient">
+                    Client Service
+                  </NavLink>
+                </li>
+              </ul>
+              <div className="user_option">
+                
+                <Link to="/order-online" className="order_online">
+                  Welcome!
+                </Link>
+              </div>
+            </div>
+          </nav>
         </div>
       </header>
-      <header className="show-when-mobile">
-        <h1>Ecomerce App</h1>
-        <label className="absolute" htmlFor="burger">
-          <i className="fas fa-bars" />
-        </label>
-        <input id="burger" type="checkbox" />
-        <div className="show-on-click">
-        <div className="main-div">
-            <label htmlFor="html">
-             Home <i className="fas fa-plus" />
-            </label>
-            <input id="html" type="checkbox" />
-            {/*<ul className="sub-div">
-              <li>
-                <a href="">Project1.1</a>
-              </li>
-              <li>
-                <a href="">Project1.2</a>
-              </li>
-              <li>
-                <a href="">Project1.3</a>
-              </li>
-            </ul>*/}
-          </div>
-          <div className="main-div">
-            <label htmlFor="html">
-             Brand <i className="fas fa-plus" />
-            </label>
-            <input id="html" type="checkbox" />
-            {/*<ul className="sub-div">
-              <li>
-                <a href="">Project1.1</a>
-              </li>
-              <li>
-                <a href="">Project1.2</a>
-              </li>
-              <li>
-                <a href="">Project1.3</a>
-              </li>
-            </ul>*/}
-          </div>
-          <div className="main-div">
-            <label htmlFor="css">
-             Product <i className="fas fa-plus" />
-            </label>
-            <input id="css" type="checkbox" />
-            {/*<ul className="sub-div">
-              <li>
-                <a href="">Project2.1</a>
-              </li>
-              <li>
-                <a href="">Project2.2</a>
-              </li>
-              <li>
-                <label className="mini-Projects" htmlFor="mini">
-                  mini Projects <i className="fas fa-plus" />
-                </label>
-                <input id="mini" type="checkbox" />
-                <ul className="sub-sub-div">
-                  <li>
-                    <a href="">Project 1</a>
-                  </li>
-                  <li>
-                    <a href="">Project 2</a>
-                  </li>
-                  <li>
-                    <a href="">Project 3</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>*/}
-          </div>
-          <div className="main-div">
-            <label htmlFor="js">
-             ServiceClient <i className="fas fa-plus" />
-            </label>
-            <input id="js" type="checkbox" />
-            {/*<ul className="sub-div">
-              <li>
-                <a href="">coming soon🔥</a>
-              </li>
-            </ul>*/}
-          </div>
-        </div>
-      </header>
+      {/* end header section */}
     </div>
   );
 };

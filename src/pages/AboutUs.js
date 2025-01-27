@@ -16,8 +16,7 @@ import f9 from "../images/f9.png";
 import aboutimg from "../images/about-img.png";
 import favicon from "../images/favicon.png";
 
-
-const ServiceClient = () => {
+const AboutUs = () => {
   return (
     <>
       
@@ -29,63 +28,36 @@ const ServiceClient = () => {
     </div>
     <Header />
   </div>
-  {/* book section */}
-  <section className="book_section layout_padding">
-    <div className="container">
-    <div className="col-md-6 mx-auto">
-      <div className="heading_container">
-        <h2>Book A Table</h2>
-      </div>
-      </div>
+  
+  {/* about section */}
+  <section className="about_section layout_padding">
+    <div className="container  ">
       <div className="row">
-        <div className="col-md-6 mx-auto">
-          <div className="form_container">
-            <form action="">
-              <div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Phone Number"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div>
-                <select className="form-control nice-select wide">
-                  <option value="" disabled="" selected="">
-                    How many persons?
-                  </option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                </select>
-              </div>
-              <div>
-                <input type="date" className="form-control" />
-              </div>
-              <div className="btn_box">
-                <button>Book Now</button>
-              </div>
-            </form>
+        <div className="col-md-6 ">
+          <div className="img-box">
+          <img src={aboutimg} alt="" />
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="detail-box">
+            <div className="heading_container">
+              <h2>We Are Feane</h2>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don&apos;t look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn&apos;t anything embarrassing
+              hidden in the middle of text. All
+            </p>
+            
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/* end book section */}
+  {/* end about section */}
   {/* footer section */}
   <footer className="footer_section">
     <div className="container">
@@ -94,11 +66,11 @@ const ServiceClient = () => {
           <div className="footer_contact">
             <h4>Contact Us</h4>
             <div className="contact_link_box">
-              <p href="">
+              <p href=" ">
                 <i className="fa fa-map-marker" aria-hidden="true" />
                 <span>Location</span>
               </p>
-              <p href="">
+              <p href=" ">
                 <i className="fa fa-phone" aria-hidden="true" />
                 <span>Call +01 1234567890</span>
               </p>
@@ -150,7 +122,7 @@ const ServiceClient = () => {
           <br />
           <br />
           © <span id="displayYear" /> Distributed By
-          <p href="https://themewagon.com/" target="_blank">
+          <p href="https://themewagon.com/">
             ThemeWagon
           </p>
         </p>
@@ -170,8 +142,9 @@ const ServiceClient = () => {
   </body>
 </>
 
+      
     </>
   );
 };
 
-export default ServiceClient;
+export default AboutUs;

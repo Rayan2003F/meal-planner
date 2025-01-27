@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/home';
-import Brand from './pages/Brand';
-import Product from './pages/Product';
+import AboutUs from './pages/AboutUs';
+import Meals from './pages/Meals';
 import ServiceClient from './pages/ServiceClient';
-
+import Chatbot from "./pages/chatbot";
 
 const router = createBrowserRouter([
   {
@@ -20,18 +19,23 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/Brand",
-    element: <Brand/>,
+    path: "/AboutUs",
+    element: <AboutUs/>,
   },
 
   {
-    path: "/Product",
-    element: <Product/>,
+    path: "/Meals",
+    element: <Meals/>,
   },
 
   {
     path: "/ServiceClient",
     element: <ServiceClient/>,
+  },
+
+  {
+    path: "/Chatbot",
+    element: <Chatbot/>,
   },
 ]);
 

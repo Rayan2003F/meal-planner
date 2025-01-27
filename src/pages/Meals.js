@@ -16,138 +16,20 @@ import f9 from "../images/f9.png";
 import aboutimg from "../images/about-img.png";
 import favicon from "../images/favicon.png";
 
-
-
-
-const Home = () => {
+const Meals = () => {
   return (
     <>
+      
       <>
-      <div className="hero_area">
+      <body className="sub_page">
+  <div className="hero_area">
     <div className="bg-box">
     <img src={heroBg} alt="" />
-
     </div>
-      <Header />
-  
-  
-    
-    {/* slider section */}
-    <section className="slider_section ">
-      <div id="customCarousel1" className="carousel slide" data-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="container ">
-              <div className="row">
-                <div className="col-md-7 col-lg-6 ">
-                  <div className="detail-box">
-                    <h1>Fast Food Restaurant</h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi,
-                      temporibus sapiente ad mollitia laborum quam quisquam esse
-                      error unde. Tempora ex doloremque, labore, sunt repellat
-                      dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div className="btn-box">
-                      <p href="" className="btn1">
-                        Order Now
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item ">
-            <div className="container ">
-              <div className="row">
-                <div className="col-md-7 col-lg-6 ">
-                  <div className="detail-box">
-                    <h1>Fast Food Restaurant</h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi,
-                      temporibus sapiente ad mollitia laborum quam quisquam esse
-                      error unde. Tempora ex doloremque, labore, sunt repellat
-                      dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div className="btn-box">
-                      <p href="" className="btn1">
-                        Order Now
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="container ">
-              <div className="row">
-                <div className="col-md-7 col-lg-6 ">
-                  <div className="detail-box">
-                    <h1>Fast Food Restaurant</h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi,
-                      temporibus sapiente ad mollitia laborum quam quisquam esse
-                      error unde. Tempora ex doloremque, labore, sunt repellat
-                      dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
-                    <div className="btn-box">
-                      <p href="" className="btn1">
-                        Order Now
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    {/* end slider section */}
+    <Header />
   </div>
-  {/* offer section */}
-  <section className="offer_section layout_padding-bottom">
-    <div className="offer_container">
-      <div className="container ">
-        <div className="row">
-          <div className="col-md-6  ">
-            <div className="box ">
-              <div className="img-box">
-              <img src={o1} alt="" />
-              </div>
-              <div className="detail-box">
-                <h5>Tasty Thursdays</h5>
-                <h6>
-                  <span>20%</span> Off
-                </h6>
-                
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6  ">
-            <div className="box ">
-              <div className="img-box">
-              <img src={o2} alt="" />
-              </div>
-              <div className="detail-box">
-                <h5>Pizza Days</h5>
-                <h6>
-                  <span>15%</span> Off
-                </h6>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* end offer section */}
   {/* food section */}
-  <section className="food_section layout_padding-bottom">
+  <section className="food_section layout_padding">
     <div className="container">
       <div className="heading_container heading_center">
         <h2>Our Menu</h2>
@@ -837,140 +719,6 @@ const Home = () => {
     </div>
   </section>
   {/* end food section */}
-  {/* about section */}
-  <section className="about_section layout_padding">
-    <div className="container  ">
-      <div className="row">
-        <div className="col-md-6 ">
-          <div className="img-box">
-          <img src={aboutimg} alt="" />
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="detail-box">
-            <div className="heading_container">
-              <h2>We Are Feane</h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don&apos;t look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn&apos;t anything embarrassing
-              hidden in the middle of text. All
-            </p>
-            <p href="">Read More</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* end about section */}
-  {/* book section */}
-  <section className="book_section layout_padding">
-    <div className="container">
-      <div className="heading_container">
-        <h2>Book A Table</h2>
-      </div>
-      <div className="row">
-        <div className="col-md-6">
-          <div className="form_container">
-            <form action="">
-              <div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Phone Number"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div>
-                <select className="form-control nice-select wide">
-                  <option value="" disabled="" selected="">
-                    How many persons?
-                  </option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                </select>
-              </div>
-              <div>
-                <input type="date" className="form-control" />
-              </div>
-              <div className="btn_box">
-                <button>Book Now</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className="map_container ">
-            <div id="googleMap" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* end book section */}
-  {/* client section */}
-  <section className="client_section layout_padding-bottom">
-    <div className="container">
-      <div className="heading_container heading_center psudo_white_primary mb_45">
-        <h2>What Says Our Customers</h2>
-      </div>
-      <div className="carousel-wrap row ">
-        <div className="owl-carousel client_owl-carousel">
-          <div className="item">
-            <div className="box">
-              <div className="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
-                </p>
-                <h6>Moana Michell</h6>
-                <p>magna aliqua</p>
-              </div>
-              <div className="img-box">
-              <img src={client1} alt="" className="box-img" />
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <div className="box">
-              <div className="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
-                </p>
-                <h6>Mike Hamell</h6>
-                <p>magna aliqua</p>
-              </div>
-              <div className="img-box">
-              <img src={client2} alt="" className="box-img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* end client section */}
   {/* footer section */}
   <footer className="footer_section">
     <div className="container">
@@ -1052,10 +800,11 @@ const Home = () => {
   {/* custom js */}
   {/* Google Map */}
   {/* End Google Map */}
+  </body>
 </>
 
     </>
   );
 };
 
-export default Home;
+export default Meals;
